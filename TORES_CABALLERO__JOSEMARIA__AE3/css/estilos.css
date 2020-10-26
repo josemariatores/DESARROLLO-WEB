@@ -1,0 +1,17 @@
+.body{
+    font-style:sans-serif ;
+    font-size: 16px;
+    color: #5d5d5d;
+}
+.parrafo1{
+    text-align: center;
+    
+}
+
+.boton{
+    color: solid;
+    border-radius: 3px;
+    color: blue;
+    background-color: orange;
+    
+}
