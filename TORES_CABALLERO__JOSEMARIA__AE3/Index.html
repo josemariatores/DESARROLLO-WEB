@@ -3,68 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <link rel="stylesheet" href="css//estilos.css">
-        <script>
-
-        </script>
+        <link rel="stylesheet" href="css/estilos.css" >
+        
     </head>
-    <body class="body">
-
-        <!--Paso1-->
-        <section class="parrafo1">
-            <div>
-            <h1>Este sera el titulo del punto 1</h1>
-            <p>Aqui ira el texto del punto 1</p>
-            <button class="boton" >Avanza</button>
-            </div>
-        </section>
-        <!--Paso2-->
-        <section>
-            <div>
-                <h2>Rellene estos datos </h2>
-                <fieldset>
-                    <h3>Datos Personales</h3>
-                    <form>
-                        <label for="nombre">Nombre:</label> <input type="nombre" name="nombre" id="nombre" required/><br> 
-                        <label for="apellido1">Primer apellido:</label> <input type="text" name="apellido1" id="apellido1" required size="25"/><br>
-                        <label for="apellido2">Segundo apellido:</label> <input type="text" name="apellido2" id="apellido2" required size="25"/> <br>
-                        <label for="fecha">Fecha:</label><input type="date" value="2020-10-26" min="2010-06-30" max="2050-10-26" id="fecha" /><br>
-                        <label for="direccion">Dirección:</label> <input type="text" name="direccion" id="direccion" size="50" /><br>
-                        <label for="codigopostal">Código Postal:</label><input type="text" id="codigopostal" required  maxlength="5" ><br>
-                        <select required name="Provincias" class="form-control">
-                            <option>Elige Provincias</option>
-                            <option>Valencia</option>
-                            <option>Alicante</option>
-                            <option>Castellon</option>
-                        </select><br>
-                        <label for="municipio">Municipio:</label> <input type="text" name="municipio" id="municipio" required/><br> 
-
-                    </form>
-                    <button class="boton" >Enviar</button>
-                </fieldset>
-
-            </div>
-        </section>
-        <!--Paso3-->
-        <section>
-            <div>
-                <p>
-                    <a>¿Son estos tus datos?</a><br>
-                    <button class="boton">Aceptar</button>
-                    <button class="boton">Atras</button>
-                </p>
-                
-            </div>
-        </section>
-        <!--Paso4-->
-        <section class="envio">
-            <div>
-                <p>
-                    <a>Sus datos han sido enviados correctamente </a><br>
-                    <a>Gracias por su colaboracion</a>
-                </p>
-            </div>
-        </section>
+    <body>
+        <header class="header">
+            <nav class="nav_var">
+                <div class="return"><button id="returnbutton" class="boton">Atras</button></div>
+                <div class="continue"><button id="continue" class="boton">Continuar</button></div>
+            </nav>
+        </header>
     </body>
-    <script src="js/UNO.js"></script>
+    
+    <script src="js/index.js">
+        
+    </script>
 </html>
