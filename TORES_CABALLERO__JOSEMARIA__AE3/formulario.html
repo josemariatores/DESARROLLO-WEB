@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="css/estilos.css" >
+        
+    </head>
+    <body class="body">
+        <header class="nav_var">
+            <div class="return"><button id="returnbutton" type="submit" class="boton" onclick="retrocede()" onchange="OcultaBoton()">Atras</button></div>
+            <div class="continue"><button id="continue" type="submit" class="boton" onclick="continua()">Continua</button></div>
+        </header>
+
+        <!--Paso1-->
+        <section class="parrafo1" id="n1">
+            <div>
+            <h1>Este sera el titulo del punto 1</h1>
+            <p>Aqui ira el texto del punto 1</p>
+            <form id="URL1">
+                <label>Introduce URL:</label><input type="url" onchange="saveurl()" id="URL" name="callback" required/>
+            </form>
+            
+            </div>
+        </section>
+        <!--Paso2-->
+        <section id="n2">
+            <div id="formulario">
+                <h2>Rellene estos datos </h2>
+                <fieldset>
+                    <h3>Datos Personales</h3>
+                    <form name="formulario"> 
+                        <label for="nombre">Nombre:</label> <input type="nombre" name="nombre" id="nombre" required/><br> 
+                        <label for="apellido1">Primer apellido:</label> <input type="text" name="apellido1" id="apellido1" required size="25"/><br>
+                        <label for="apellido2">Segundo apellido:</label> <input type="text" name="apellido2" id="apellido2" required size="25"/> <br>
+                        <label for="fecha">Fecha:</label><input type="date" value="2020-10-26" min="2010-06-30" max="2050-10-26" id="fecha" /><br>
+                        <label for="direccion">Dirección:</label> <input type="text" name="direccion" id="direccion" size="50" /><br>
+                        <label for="codigopostal">Código Postal:</label><input type="text" id="codigopostal" required  maxlength="5" ><br>
+                        <select required name="Provincias" class="form-control">
+                            <option>Elige Provincias</option>
+                            <option>Valencia</option>
+                            <option>Alicante</option>
+                            <option>Castellon</option>
+                        </select><br>
+                        <label for="municipio">Municipio:</label> <input type="text" name="municipio" id="municipio" required/><br> 
+                        <button id="" class="boton" type="button" onclick="formuEnvio()">Enviar</button>
+                    </form>
+                    
+                </fieldset>
+
+            </div>
+        </section>
+        <!--Paso3-->
+        <section id="n3">
+            <div id="paso3">
+                <p class="confirmacion">
+                    <a id="confirmacion">¿Son estos tus datos?</a><br>
+                    <button id="" class="boton" type="button">Confirmar</button>
+                </p>
+                
+            </div>
+        </section>
+        <!--Paso4-->
+        <section class="envio" id="n4">
+            <div id="paso4">
+                <p>
+                    <a>Sus datos han sido enviados correctamente </a><br>
+                    <a>Gracias por su colaboracion</a><br>
+                    
+                </p>
+                <button id="" class="boton" type="button">Salir</button>
+            </div>
+        </section>
+    </body>
+    
+    <script src="js/UNO.js">
+        
+    </script>
+</html>
